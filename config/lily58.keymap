@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC          &mt EXCLAMATION Q  &mt AT W  &mt HASH E  &mt DOLLAR R  &mt PERCENT T                            &mt CARET Y             &mt AMPERSAND U          &mt ASTERISK I  &kp O     &kp P                &kp HOME
-&kp LCTRL        &kp A              &kp S     &kp D       &kp F         &kp G                                    &mt LEFT_PARENTHESIS H  &mt RIGHT_PARENTHESIS J  &kp K           &kp L     &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT
-&kp BSPC         &kp Z              &kp X     &kp C       &kp V         &kp B                                    &kp N                   &kp M                    &kp SQT         &kp SEMI  &none                &kp RALT
-&kp PRINTSCREEN  &kp CAPSLOCK       &none     &none       &none         &kp LALT        &kp TAB      &kp DELETE  &kp MINUS               &kp EQUAL                &kp BSLH        &kp DOT   &sk RSHFT            &kp RIGHT_WIN
-                                              &kp LCTRL   &mo 1         &kp LEFT_SHIFT  &kp SPACE    &kp RET     &kp SLASH               &tog 2                   &tog 3
+&kp ESC        &mt EXCLAMATION Q  &mt AT W  &mt HASH E  &mt DOLLAR R  &mt PERCENT T                            &mt CARET Y             &mt AMPERSAND U          &mt ASTERISK I       &kp O                 &kp P      &kp HOME
+&kp BACKSPACE  &kp A              &kp S     &kp D       &kp F         &kp G                                    &mt LEFT_PARENTHESIS H  &mt RIGHT_PARENTHESIS J  &kp K                &kp L                 &kp APOS   &kp BACKSPACE
+&kp TAB        &kp Z              &kp X     &kp C       &kp V         &kp B                                    &kp N                   &kp M                    &kp SEMI             &none                 &kp BSLH   &kp RALT
+&kp CAPS       &none              &none     &none       &none         &kp LALT        &kp LCTRL    &kp DELETE  &kp MINUS               &kp EQUAL                &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &sk RSHFT  &kp RIGHT_WIN
+                                            &kp LCTRL   &mo 1         &kp LEFT_SHIFT  &kp SPACE    &kp RET     &kp SLASH               &tog 2                   &tog 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -42,11 +42,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp F1         &kp F2  &kp F3    &kp F4  &kp F5    &kp F6                         &kp F7     &kp F8      &kp F9    &kp F10    &kp F11  &kp F12
-&kp BACKSPACE  &kp N1  &kp N2    &kp N3  &kp N4    &kp N5                         &kp N6     &kp N7      &kp N8    &kp N9     &kp N0   &none
-&none          &none   &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT                      &kp LEFT   &kp UP      &kp DOWN  &kp RIGHT  &none    &trans
-&kp RET        &trans  &none     &none   &none     &none      &none     &kp BSPC  &none      &none       &none     &none      &none    &trans
-                                 &trans  &none     &trans     &trans    &none     &kp COMMA  &kp PERIOD  &none
+&kp F1     &kp F2  &kp F3    &kp F4  &kp F5    &kp F6                         &kp F7     &kp F8      &kp F9    &kp F10    &kp F11  &kp F12
+&kp ENTER  &kp N1  &kp N2    &kp N3  &kp N4    &kp N5                         &kp N6     &kp N7      &kp N8    &kp N9     &kp N0   &none
+&none      &none   &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT                      &kp LEFT   &kp UP      &kp DOWN  &kp RIGHT  &none    &trans
+&none      &trans  &none     &none   &none     &none      &none     &kp BSPC  &none      &none       &none     &none      &none    &trans
+                             &trans  &none     &trans     &trans    &none     &kp COMMA  &kp PERIOD  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
