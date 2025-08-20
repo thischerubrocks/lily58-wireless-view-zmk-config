@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC       &mt DOUBLE_QUOTES SINGLE_QUOTE  &mt PIPE BACKSLASH  &kp K_COPY       &kp K_PASTE   &mo 2                                    &mt UNDER MINUS         &mt PLUS EQUAL           &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &kp HOME           &kp RSHFT
-&kp TAB       &mt EXCLAMATION Q               &mt AT W            &mt HASH E       &mt DOLLAR R  &mt PERCENT T                            &mt CARET Y             &mt AMPERSAND U          &mt ASTERISK I       &kp O                 &kp P              &kp RIGHT_WIN
-&kp CAPS      &kp A                           &kp S               &kp D            &kp F         &kp G                                    &mt LEFT_PARENTHESIS H  &mt RIGHT_PARENTHESIS J  &kp K                &kp L                 &none              &kp RALT
-&kp LEFT_ALT  &kp Z                           &kp X               &kp C            &kp V         &kp B           &kp LCTRL    &kp DELETE  &kp N                   &kp M                    &none                &none                 &kp RIGHT_CONTROL  &kp BACKSPACE
-                                                                  &kp PRINTSCREEN  &mo 1         &kp LEFT_SHIFT  &kp SPACE    &kp RET     &kp SLASH               &mo 2                    &mo 3
+&kp ESC       &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp LC(X)  &kp LC(C)        &kp LC(V)     &mo 2                                    &mt UNDER MINUS         &mt PLUS EQUAL           &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &kp HOME            &kp RSHFT
+&kp TAB       &mt EXCLAMATION Q               &mt AT W   &mt HASH E       &mt DOLLAR R  &mt PERCENT T                            &mt CARET Y             &mt AMPERSAND U          &mt ASTERISK I       &kp O                 &kp P               &kp BACKSPACE
+&kp CAPS      &kp A                           &kp S      &kp D            &kp F         &kp G                                    &mt LEFT_PARENTHESIS H  &mt RIGHT_PARENTHESIS J  &kp K                &kp L                 &mt PIPE BACKSLASH  &kp RALT
+&kp LEFT_ALT  &kp Z                           &kp X      &kp C            &kp V         &kp B           &kp LCTRL    &kp DELETE  &kp N                   &kp M                    &none                &none                 &kp RIGHT_WIN       &kp RIGHT_CONTROL
+                                                         &kp PRINTSCREEN  &mo 1         &kp LEFT_SHIFT  &kp SPACE    &kp RET     &kp SLASH               &mo 2                    &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -62,11 +62,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp ESC  &none   &none   &none    &none    &none                            &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS   &kp C_BRI_UP  &kp C_VOLUME_UP
-&kp F1   &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                           &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_EQUAL  &kp C_BRI_DN  &kp C_VOLUME_DOWN
-&kp F7   &kp F8  &kp F9  &kp F10  &kp F11  &kp F12                          &kp KP_N1  &kp KP_N2  &kp KP_N3  &none         &none         &kp K_MUTE
-&none    &none   &none   &none    &none    &none    &trans    &kp KP_N0     &none      &none      &none      &none         &none         &none
-                         &none    &none    &trans   &trans    &kp KP_ENTER  &none      &trans     &trans
+&kp ESC  &none   &none   &none    &none    &none                                &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS   &kp C_BRI_UP  &kp C_VOLUME_UP
+&kp F1   &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                               &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_EQUAL  &kp C_BRI_DN  &kp C_VOLUME_DOWN
+&kp F7   &kp F8  &kp F9  &kp F10  &kp F11  &kp F12                              &kp KP_N1  &kp KP_N2  &kp KP_N3  &none         &none         &kp K_MUTE
+&none    &none   &none   &none    &none    &none    &trans        &kp KP_N0     &none      &none      &none      &none         &none         &none
+                         &none    &none    &trans   &kp KP_NUM    &kp KP_ENTER  &none      &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
