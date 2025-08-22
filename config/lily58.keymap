@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB          &kp Q      &kp W      &kp E      &kp R          &kp T                                       &kp HOME   &mt PLUS EQUAL  &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &mt UNDER MINUS  &kp RSHFT
-&kp CAPS         &kp A      &kp S      &kp D      &kp F          &kp G                                       &kp Y      &kp U           &kp I                &kp O                 &kp P            &kp BACKSPACE
-&kp LCTRL        &kp Z      &kp X      &kp C      &kp V          &kp B                                       &kp H      &kp J           &kp K                &kp L                 &mt SEMI COLON   &mt DOUBLE_QUOTES APOSTROPHE
-&kp PRINTSCREEN  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(LS(V))  &kp LC(V)       &kp LEFT_ALT    &kp DELETE  &kp N      &kp M           &none                &mt PIPE BACKSLASH    &kp RIGHT_WIN    &kp RIGHT_CONTROL
-                                       &mo 2      &mo 1          &kp LEFT_SHIFT  &kp SPACE       &kp RET     &kp SLASH  &mo 2           &mo 3
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                                       &kp Y           &kp U  &kp I                &kp O                 &kp P            &kp RSHFT
+&kp CAPS   &kp A  &kp S  &kp D  &kp F  &kp G                                       &kp H           &kp J  &kp K                &kp L                 &mt UNDER MINUS  &kp BACKSPACE
+&kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B                                       &kp N           &kp M  &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &mt SEMI COLON   &mt DOUBLE_QUOTES APOSTROPHE
+&mo 4      &none  &none  &none  &none  &none           &kp LEFT_ALT    &kp DELETE  &mt PLUS EQUAL  &none  &none                &mt PIPE BACKSLASH    &kp RIGHT_WIN    &kp RIGHT_CONTROL
+                         &mo 2  &mo 1  &kp LEFT_SHIFT  &kp SPACE       &kp RET     &kp SLASH       &mo 2  &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -44,9 +44,9 @@
             bindings = <
 &kp F1         &kp F2    &kp F3   &kp F4    &kp F5      &kp F6                           &kp F7     &kp F8      &kp F9        &kp F10               &kp F11                &kp F12
 &kp BACKSPACE  &kp EXCL  &kp RET  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPS    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&none          &none     &kp AT   &kp LEFT  &kp UP      &kp RIGHT                        &kp LEFT   &kp UP      &kp DOWN      &kp RIGHT             &none                  &trans
+&none          &kp AT    &kp AT   &kp LEFT  &kp UP      &kp RIGHT                        &kp LEFT   &kp UP      &kp DOWN      &kp RIGHT             &none                  &trans
 &none          &none     &none    &none     &kp DOWN    &none        &none     &kp BSPC  &none      &none       &none         &none                 &none                  &trans
-                                  &trans    &none       &trans       &trans    &none     &kp COMMA  &kp PERIOD  &none
+                                  &trans    &none       &trans       &trans    &kp HOME  &kp COMMA  &kp PERIOD  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -79,6 +79,16 @@
 &none        &none       &none       &none  &none       &none                           &none  &none  &none  &none          &none  &kp C_MUTE
 &none        &none       &none       &none  &none       &none           &none    &none  &none  &none  &none  &none          &none  &none
                                      &none  &none       &none           &none    &none  &none  &none  &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans         &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans         &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(LS(V))  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &kp LC(V)      &trans  &trans    &kp HOME  &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans     &trans         &trans  &trans    &trans    &trans  &trans  &trans
             >;
         };
     };
