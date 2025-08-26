@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                                       &kp Y           &kp U  &kp I                &kp O                 &kp P            &kp RSHFT
-&kp CAPS   &kp A  &kp S  &kp D  &kp F  &kp G                                       &kp H           &kp J  &kp K                &kp L                 &mt UNDER MINUS  &kp BACKSPACE
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B                                       &kp N           &kp M  &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &mt SEMI COLON   &mt DOUBLE_QUOTES APOSTROPHE
-&mo 4      &none  &none  &none  &none  &none           &kp LEFT_ALT    &kp DELETE  &mt PLUS EQUAL  &none  &none                &mt PIPE BACKSLASH    &kp RIGHT_WIN    &kp RIGHT_CONTROL
-                         &mo 2  &mo 1  &kp LEFT_SHIFT  &kp SPACE       &kp RET     &kp SLASH       &mo 2  &mo 3
+&none             &none  &none  &none  &none  &none                                       &mt PLUS EQUAL  &none  &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &mt UNDER MINUS  &kp RSHFT
+&kp TAB           &kp Q  &kp W  &kp E  &kp R  &kp T                                       &kp Y           &kp U  &kp I                &kp O                 &kp P            &kp BACKSPACE
+&kp CAPS          &kp A  &kp S  &kp D  &kp F  &kp G                                       &kp H           &kp J  &kp K                &kp L                 &mt SEMI COLON   &mt DOUBLE_QUOTES APOSTROPHE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V  &kp B           &kp LEFT_ALT    &kp DELETE  &kp N           &kp M  &none                &mt PIPE BACKSLASH    &kp RIGHT_WIN    &kp RIGHT_CONTROL
+                                &mo 4  &mo 1  &kp LEFT_SHIFT  &kp SPACE       &kp RET     &kp SLASH       &mo 2  &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -90,6 +90,19 @@
 &trans  &trans     &trans     &trans     &kp LC(V)      &trans  &trans    &kp HOME  &trans  &trans  &trans  &trans  &trans  &trans
                               &trans     &trans         &trans  &trans    &trans    &trans  &trans  &trans
             >;
+        };
+
+        layer_5 {
+            display-name = "Base";
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                                       &kp Y           &kp U  &kp I                &kp O                 &kp P            &kp RSHFT
+&kp CAPS   &kp A  &kp S  &kp D  &kp F  &kp G                                       &kp H           &kp J  &kp K                &kp L                 &mt UNDER MINUS  &kp BACKSPACE
+&kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B                                       &kp N           &kp M  &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &mt SEMI COLON   &mt DOUBLE_QUOTES APOSTROPHE
+&mo 4      &none  &none  &none  &none  &none           &kp LEFT_ALT    &kp DELETE  &mt PLUS EQUAL  &none  &none                &mt PIPE BACKSLASH    &kp RIGHT_WIN    &kp RIGHT_CONTROL
+                         &mo 2  &mo 1  &kp LEFT_SHIFT  &kp SPACE       &kp RET     &kp SLASH       &mo 2  &mo 3
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
