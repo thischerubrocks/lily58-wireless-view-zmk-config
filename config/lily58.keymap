@@ -24,11 +24,11 @@
 
             display-name = "Base";
             bindings = <
-&kp PRINTSCREEN  &kp LC(C)  &kp LC(V)  &kp LC(LS(V))     &kp LC(X)  &kp LC(Z)                                &kp RIGHT_ALT  &none      &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &mt UNDER MINUS  &mt PLUS EQUAL
-&kp TAB          &kp Q      &mt AT W   &kp E             &kp R      &kp T                                    &kp Y          &kp U      &kp I                &kp O                 &kp P            &kp BACKSPACE
-&kp LEFT_ALT     &kp A      &kp S      &kp D             &kp F      &kp G                                    &kp H          &kp J      &kp K                &kp L                 &mt SEMI COLON   &mt DOUBLE_QUOTES APOSTROPHE
-&mo 2            &kp Z      &kp X      &kp C             &kp V      &kp B           &kp CAPS     &kp DELETE  &kp N          &kp M      &none                &mt PIPE BACKSLASH    &kp RIGHT_WIN    &kp RIGHT_CONTROL
-                                       &kp LEFT_CONTROL  &mo 1      &kp LEFT_SHIFT  &kp SPACE    &kp RET     &mo 2          &kp SLASH  &mo 3
+&kp PRINTSCREEN  &none    &kp ESC  &none         &none             &none                                       &kp RIGHT_ALT  &mo 3      &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &mt UNDER MINUS  &mt PLUS EQUAL
+&kp TAB          &kp Q    &kp W    &kp E         &kp R             &kp T                                       &kp Y          &kp U      &kp I                &kp O                 &kp P            &kp RIGHT_SHIFT
+&kp LEFT_ALT     &kp A    &kp S    &kp D         &kp F             &kp G                                       &kp H          &kp J      &kp K                &kp L                 &mt SEMI COLON   &mt DOUBLE_QUOTES APOSTROPHE
+&mo 2            &lt 4 Z  &kp X    &kp C         &kp V             &kp B           &kp CAPS       &kp DELETE   &kp N          &kp M      &none                &mt PIPE BACKSLASH    &kp RIGHT_WIN    &kp RIGHT_CONTROL
+                                   &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp SLASH  &mo 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -44,11 +44,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp F1  &kp F2    &kp F3            &kp F4            &kp F5                   &kp F6                           &kp F7     &kp F8      &kp F9        &kp F10               &kp F11                &kp F12
-&none   &kp EXCL  &kp AT_SIGN       &kp HASH          &kp DOLLAR               &kp PERCENT                      &kp CARET  &kp AMPS    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&none   &none     &kp BACKSPACE     &kp LC(LS(UP))    &kp ENTER                &none                            &kp LEFT   &kp UP      &kp DOWN      &kp RIGHT             &none                  &none
-&none   &none     &kp LC(LS(LEFT))  &kp LC(LS(DOWN))  &kp LC(LS(RIGHT_ARROW))  &none        &none     &kp BSPC  &none      &none       &none         &none                 &none                  &trans
-                                    &trans            &none                    &trans       &trans    &kp HOME  &kp COMMA  &kp PERIOD  &none
+&kp F1  &kp F2    &kp F3            &kp F4            &kp F5                   &kp F6                               &kp F7     &kp F8          &kp F9        &kp F10               &kp F11                &kp F12
+&none   &kp EXCL  &kp AT_SIGN       &kp HASH          &kp DOLLAR               &kp PERCENT                          &kp CARET  &kp AMPS        &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none   &none     &kp BACKSPACE     &kp LC(LS(UP))    &kp ENTER                &kp HOME                             &kp HOME   &none           &kp UP        &none                 &kp PAGE_UP            &none
+&none   &none     &kp LC(LS(LEFT))  &kp LC(LS(DOWN))  &kp LC(LS(RIGHT_ARROW))  &none        &kp DELETE    &kp BSPC  &none      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT             &kp PAGE_DOWN          &trans
+                                    &trans            &none                    &trans       &trans        &none     &kp COMMA  &kp PERIOD      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -64,11 +64,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp ESC  &kp KP_N7  &kp KP_N8  &kp KP_N9   &none      &none                            &none         &kp KP_N7  &kp KP_N8  &kp KP_N9  &none         &none
-&none    &kp KP_N4  &kp KP_N5  &kp KP_N6   &none      &none                            &kp KP_SLASH  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp BSPC
-&none    &kp KP_N1  &kp KP_N2  &kp KP_N3   &none      &none                            &kp KP_DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MINUS  &none
-&none    &kp KP_N0  &none      &kp KP_DOT  &none      &none   &kp KP_NUMLOCK    &none  &none         &kp KP_N0  &none      &none      &none         &none
-                               &none       &kp ENTER  &trans  &none             &none  &none         &none      &none
+&kp ESC  &none         &none      &none      &none      &none                                   &none         &kp KP_N7  &kp KP_N8  &kp KP_N9  &none         &none
+&none    &kp KP_SLASH  &kp KP_N7  &kp KP_N8  &kp KP_N9  &none                                   &kp KP_SLASH  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp BSPC
+&none    &kp KP_DOT    &kp KP_N4  &kp KP_N5  &kp KP_N6  &none                                   &kp KP_DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MINUS  &none
+&none    &none         &kp KP_N1  &kp KP_N2  &kp KP_N3  &none          &kp KP_NUMLOCK    &none  &none         &kp KP_N0  &none      &none      &none         &none
+                                  &none      &kp KP_N0  &kp BACKSPACE  &none             &none  &none         &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -86,11 +86,11 @@
 
         layer_4 {
             bindings = <
-&trans     &trans     &trans     &trans         &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)      &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &none      &none      &kp LC(LS(V))  &none   &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans     &trans     &trans         &none   &trans  &trans    &kp HOME  &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans         &trans  &trans  &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans         &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&none   &none   &none   &kp LC(V)  &kp LC(LS(V))  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &none   &kp LC(X)  &kp LC(Z)      &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &trans  &trans     &none          &trans  &trans       &kp HOME  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans     &trans         &trans  &kp LC(C)    &trans    &trans  &trans  &trans
             >;
         };
     };
