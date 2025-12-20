@@ -86,11 +86,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans         &trans                         &trans  &trans  &trans  &trans  &trans  &trans
-&none   &none   &none   &kp LC(V)  &kp LC(LS(V))  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &none   &kp LC(X)  &kp LC(Z)      &trans                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &trans  &trans     &none          &trans  &trans       &kp HOME  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans     &trans         &trans  &kp LC(C)    &trans    &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans         &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&none   &none   &kp LC(C)  &kp LC(V)  &kp LC(LS(V))  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &none      &kp LC(X)  &kp LC(Z)      &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &trans     &trans     &none          &trans  &trans       &kp HOME  &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans     &trans         &trans  &kp LC(C)    &trans    &trans  &trans  &trans
             >;
         };
     };
